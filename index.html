@@ -13,7 +13,7 @@
           <span class="visually-hidden">На главную</span>
         </a>
         <form class="navigation-search-form" action="https://echo.htmlacademy.ru/" method="get">
-          <input type="text" name="search-field" placeholder="Поиск по сайту" aria-label="Поле поиска">
+          <input type="search" name="search-field" placeholder="Поиск по сайту" aria-label="Поле поиска">
           <button class="search-button" type="submit">Найти</button>
         </form>
         <ul class="navigation-user-list">
@@ -28,28 +28,132 @@
           </li>
         </ul>
       </nav>
+
       <nav class="navigation">
         <ul class="navigation-list">
-          <li class="navigation-list-item">
-            <a class="navigation-list-link" href="catalog.html">Каталог товаров</a>
+          <li class="navigation-item">
+            <a class="navigation-link" href="catalog.html">Каталог товаров</a>
           </li>
-          <li class="navigation-list-item">
-            <a class="navigation-list-link" href="#">Доставка</a>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">Доставка</a>
           </li>
-          <li class="navigation-list-item">
-            <a class="navigation-list-link" href="#">Гарантия</a>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">Гарантия</a>
           </li>
-          <li class="navigation-list-item">
-            <a class="navigation-list-link" href="#">Контакты</a>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">Контакты</a>
           </li>
         </ul>
       </nav>
     </header>
-    <main>
+
+    <main class="main-index">
+      <h1 class="visually-hidden">Интернет-магазин "Device"</h1>
+
+      <section class="bestsellers">
+        <h2 class="visually-hidden">Лучшие устройства</h2>
+
+        <div class="bestsellers-slider">
+          <img class="slider-image" src="" alt="Устройства.">
+          <button class="slider-button slider-prev" type="button">
+            <span class="visually-hidden">Предыдущее устройство</span>
+          </button>
+          <button class="slider-button slider-prev" type="button">
+            <span class="visually-hidden">Следующее устройство</span>
+          </button>
+
+          <h3 class="slider-slogan">Порхает как бабочка,<br>
+            жалит как пчела!</h3>
+          <p class="slider-description">Этот обычный, на первый взгляд, квадрокоптер оснащен<br>
+            мощным лазером, замаскированным под стандартную камеру.</p>
+          <a class="slider-link" href="#">Подробнее</a>
+
+          <ol class="slider-pagination">
+            <li class="slider-pagination-item">
+              <button class="slider-pagination-button slider-pagination-button-current" type="button">
+                <span class="visually-hidden">1 устройство</span>
+              </button>
+            </li>
+            <li class="slider-pagination-item">
+              <button class="slider-pagination-button" type="button">
+                <span class="visually-hidden">2 устройство</span>
+              </button>
+            </li>
+            <li class="slider-pagination-item">
+              <button class="slider-pagination-button" type="button">
+                <span class="visually-hidden">3 устройство</span>
+              </button>
+            </li>
+          </ol>
+
+          <table class="slider-characteristics-table">
+            <tr>
+              <th class="table-characteristic">Дальность полета</th>
+              <th class="table-characteristic">Радиус поражения</th>
+            </tr>
+            <tr>
+              <td class="table-value"><b>800 м</b></td>
+              <td class="table-value"><b>50 м</b></td>
+            </tr>
+          </table>
+        </div>
+      </section>
+
+      <section class="device-categories">
+        <h2 class="visually-hidden">Категории устройств</h2>
+        <ul class="device-categories-list">
+          <li class="device-categories-item">
+            <a class="device-categories-link" href="#">Виртуальная реальности</a>
+          </li>
+          <li class="device-categories-item">
+            <a class="device-categories-link" href="#">Моноподы для селфи</a>
+          </li>
+          <li class="device-categories-item">
+            <a class="device-categories-link" href="#">Экшн-камеры</a>
+          </li>
+          <li class="device-categories-item">
+            <a class="device-categories-link" href="#">Фитнес-браслеты</a>
+          </li>
+          <li class="device-categories-item">
+            <a class="device-categories-link" href="#">Умные часы</a>
+          </li>
+          <li class="device-categories-item">
+            <a class="device-categories-link" href="#">Квадрокоптеры</a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="services">
+        <h2 class="visually-hidden">Услуги</h2>
+        <ul class="services-list">
+          <li class="service-item">
+            <button class="service-button" type="button">Доставка</button>
+          </li>
+          <li class="service-item">
+            <button class="service-button" type="button">Гарантия</button>
+          </li>
+          <li class="service-item">
+            <button class="service-button" type="button">Кредит</button>
+          </li>
+        </ul>
+        <div class="service-description">
+          <h3>Доставка</h3>
+          <p>Мы с удовольствием доставим ваш товар прямо<br>
+            к вашему подъезду совершенно бесплатно! Ведь<br>
+            мы неплохо заработаем, поднимая его на ваш этаж.</p>
+        </div>
+      </section>
+
+      <section class="delivery">
+        <h2>Доставка</h2>
+        <a class="delivery-button" href="#">Доставим редкий товар под заказ</a>
+      </section>
+
+
 
     </main>
-    <footer>
 
+    <footer>
     </footer>
   </body>
 
