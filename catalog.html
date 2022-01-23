@@ -7,7 +7,7 @@
   <body>
     <header class="page-header">
       <nav class="navigation navigation-user">
-        <a class="logo">
+        <a class="logo" href="index.html">
           <img class="header-logo" src="" alt="Логотип">
           <span class="visually-hidden">На главную</span>
         </a>
@@ -32,7 +32,7 @@
       <nav class="navigation">
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-link" href="catalog.html">Каталог товаров</a>
+            <a class="navigation-link button-show-categories" href="catalog.html">Каталог товаров</a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">Доставка</a>
@@ -51,13 +51,13 @@
       <h1 class="inner-header-title">Моноподы для селфи</h1>
       <ul class="breadcrumbs">
         <li class="breadcrumbs-item">
-          <a href="breadcrumbs-link" href="index.html">Главная</a>
+          <a class="breadcrumbs-link" href="index.html">Главная</a>
         </li>
         <li class="breadcrumbs-item">
-          <a href="breadcrumbs-link" href="#">Каталог товаров</a>
+          <a class="breadcrumbs-link" href="#">Каталог товаров</a>
         </li>
         <li class="breadcrumbs-item">
-          <a href="breadcrumbs-link">Моноподы для селфи</a>
+          <a class="breadcrumbs-link">Моноподы для селфи</a>
         </li>
       </ul>
 
@@ -65,11 +65,11 @@
         <h2 class="catalog-title">Фильтр:</h2>
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="catalog-filter-group">
-            <legeng class="catalog-filter-title">Цвет</legeng>
+            <legend class="catalog-filter-title">Цвет</legend>
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="input-control" type="checkbox" name=black" checked>
+                  <input class="input-control" type="checkbox" name="black" checked>
                   Черный
                 </label>
               </li>
@@ -109,7 +109,7 @@
           </fieldset>
 
           <fieldset class="catalog-filter-group">
-            <legeng class="catalog-filter-title">Bluetooth</legeng>
+            <legend class="catalog-filter-title">Bluetooth</legend>
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
                 <label class="control">
@@ -119,18 +119,19 @@
                 </label>
 
               </li>
-              <label class="control">
-                <input class="input-control" type="radio" name="bluetooth" value="no">
+              <li class="catalog-filter-item">
+                <label class="control">
+                  <input class="input-control" type="radio" name="bluetooth" value="no">
 
-                Нет
-              </label>
-            </li>
+                  Нет
+                </label>
+              </li>
             </ul>
           </fieldset>
           <button class="button button-yellow" type="submit">Показать</button>
         </form>
 
-        <select class="select-control" area-label="Сортировка">
+        <select class="select-control" aria-label="Сортировка">
           <option value="popular">Популярные</option>
           <option value="cheap">Сначала дешёвое</option>
           <option value="expensive">Сначала дорогое</option>
@@ -138,10 +139,10 @@
 
         <button class="button button-up" type="button">
           <span class="visually-hidden">Пролистать вверх</span>
-        </a>
+        </button>
         <button class="button button-down" type="button">
           <span class="visually-hidden">Пролистать вниз</span>
-        </a>
+        </button>
 
         <ul class="catalog-list">
           <li class="catalog-card">
@@ -182,8 +183,79 @@
         </ul>
 
         <button class="button paggination-show-more" type="button"></button>
-
+        <ul class="pagination">
+          <li class="pagination-item">
+            <a class="pagination-link pagination-prev">Назад</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link pagination-current">1</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">2</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">3</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">15</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link pagination-next" href="#">Вперёд</a>
+          </li>
+        </ul>
       </section>
     </main>
+
+    <footer class="page-footer">
+      <section class="footer-address">
+        <h2 class="visually-hidden">Адрес</h2>
+        <a class="footer-logo" href="index.html">
+          <img class="footer-logo-img" src="" alt="Логотип">
+        </a>
+        <p class="footer-adress-text">
+          Санкт-Петербург, набережная реки Карповки, 5, литера П.
+        </p>
+      </section>
+      <section class="footer-nav">
+        <h2 class="visually-hidden">Полезные ссылки</h2>
+        <ul class="footer-nav-list">
+          <li class="footer-nav-item">
+            <a class="footer-nav-link" href="#">Доставка</a>
+          </li>
+          <li class="footer-nav-item">
+            <a class="footer-nav-link" href="#">Гарантия</a>
+          </li>
+          <li class="footer-nav-item">
+            <a class="footer-nav-link" href="#">Контакты</a>
+          </li>
+        </ul>
+
+        <ul class="footer-nav-list footer-nav-list-social">
+          <li class="footer-social-item">
+            <a class="button-social" href="#">
+              <span class="visually-hidden">Фейсбук</span>
+            </a>
+          </li>
+          <li class="footer-social-item">
+            <a class="button-social" href="#">
+              <span class="visually-hidden">Инстаграм</span>
+            </a>
+          </li>
+          <li class="footer-social-item">
+            <a class="button-social" href="#">
+              <span class="visually-hidden">Твиттер</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="footer-phone">
+        <h2 class="visually-hidden">Номер телефона</h2>
+        <a class="contacts-phone" href="88128121212">+7 (812)812-12-12</a>
+        <a class="footer-logo-html-academy" href="#">
+          <img class="html-academy-img" src="" alt="Логотип">
+        </a>
+      </section>
+    </footer>
   </body>
 </html>
