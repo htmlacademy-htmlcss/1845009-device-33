@@ -1,0 +1,197 @@
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 800;
+  src: url("../fonts/raleway/raleway-800.woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/rubik/rubik-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/rubik/rubik-700.woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 800;
+  src: url("../fonts/rubik/rubik-800.woff2");
+  font-display: swap;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  background-color: #FFFFFF;
+  color: #444444;
+}
+
+.button {
+  font-family: Raleway;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.page-header {
+  background-color: #FFE17F;
+  color: #000000;
+}
+
+.navigation-search-form input, .search-button {
+  background-color: inherit;
+}
+
+.navigation-search-form input::placeholder, .search-button{
+  font-family: "Rubik", sans-serif;
+  color: inherit;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+
+.navigation-link {
+  color: inherit;
+  text-align: center;
+  text-decoration: none;
+}
+
+.navigation-site-link {
+  font-family: "Raleway", sans-serif;
+  line-height: 21px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.slider-slogan, .service-description-title, .info-title, .contacts-title, .newsletter-title {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+  color: #000000;
+}
+
+.table-feature {
+  font-size: 16px;
+}
+
+.table-value {
+  font-size: 36px;
+  color: #000000;
+}
+
+
+.device-categories-link {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  line-height: 24px;
+  text-align: center;
+  color: #000000;
+  text-decoration: none;
+}
+
+.services {
+  background-color: #F0F0F0;
+}
+
+.delivery-button {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 23px;
+  color: #000000;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #F0F0F0;
+}
+
+.delivery-companies-list {
+  font-weight: 700;
+  line-height: 20px;
+  color: #000000;
+}
+
+.contacts-subtitle {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.contacts-address {
+  font-style: normal;
+}
+
+.contacts-phone {
+  color: inherit;
+  text-align: center;
+}
+
+.newsletter {
+  background-color: #F0F0F0;
+}
+
+.newsletter-form input, .newsletter-button {
+  background-color: inherit;
+}
+
+.newsletter-form input::placeholder {
+  font-size: 18px;
+  line-height: 30px;
+
+}
+
+.newsletter-button {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.page-footer {
+  color: #FFFFFF;
+  background-color: #444444;
+}
+
+.footer-address-text {
+  font-style: normal;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.footer-nav-link, .button-social {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  color: inherit;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+}
+
+.footer-contacts-phone {
+  font-size: 16px;
+  line-height: 20px;
+  color: inherit;
+  text-align: center;
+}

@@ -3,46 +3,47 @@
   <head>
     <meta charset="utf-8">
     <title>Каталог</title>
+    <link rel="stylesheet" href="styles/styles.css">
     <base href="https://htmlacademy-htmlcss.github.io/1845009-device-33/3/">
 </head>
   <body>
     <header class="page-header">
-      <nav class="navigation navigation-user">
+      <nav class="navigation-user">
         <a class="logo" href="index.html">
           <img class="header-logo" src="images/logo-header.svg" width="146" height="36" alt="Логотип">
           <span class="visually-hidden">На главную</span>
         </a>
         <form class="navigation-search-form" action="https://echo.htmlacademy.ru/" method="get">
           <label for="search-field">Поиск</label>
-          <input type="search" name="search-field" id="search-field" placeholder="Поиск по сайту" aria-label="Поле поиска">
+          <input type="search" name="search-field" id="search-field" placeholder="Текст поиска" aria-label="Поле поиска">
           <button class="search-button" type="submit">Найти</button>
         </form>
         <ul class="navigation-user-list">
           <li class="navigation-user-item">
-            <a class="navigation-user-link" href="#">Войти</a>
+            <a class="navigation-user-link navigation-link" href="#">Войти</a>
           </li>
           <li class="navigation-user-item">
-            <a class="navigation-user-link" href="#">Сравнить</a>
+            <a class="navigation-user-link navigation-link" href="#">Сравнить</a>
           </li>
           <li class="navigation-user-item">
-            <a class="navigation-user-link" href="#">Корзина</a>
+            <a class="navigation-user-link navigation-link" href="#">Корзина</a>
           </li>
         </ul>
       </nav>
 
-      <nav class="navigation">
-        <ul class="navigation-list">
-          <li class="navigation-item">
-            <a class="navigation-link button-show-categories" href="catalog.html">Каталог товаров</a>
+      <nav class="navigation-site">
+        <ul class="navigation-site-list">
+          <li class="navigation-site-item">
+            <a class="navigation-site-link navigation-link button-show-categories" href="catalog.html">Каталог товаров</a>
           </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">Доставка</a>
+          <li class="navigation-site-item">
+            <a class="navigation-site-link navigation-link" href="#">Доставка</a>
           </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">Гарантия</a>
+          <li class="navigation-site-item">
+            <a class="navigation-site-link navigation-link" href="#">Гарантия</a>
           </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">Контакты</a>
+          <li class="navigation-site-item">
+            <a class="navigation-site-link navigation-link" href="#">Контакты</a>
           </li>
         </ul>
       </nav>
@@ -184,7 +185,7 @@
           </li>
         </ul>
 
-        <button class="button paggination-show-more" type="button"></button>
+        <button class="button paggination-show-more" type="button">Загрузить ещё</button>
         <ul class="pagination">
           <li class="pagination-item">
             <a class="pagination-link pagination-prev">Назад</a>
@@ -215,8 +216,8 @@
           <img class="footer-logo-img" src="images/logo-footer.svg" width="145" height="36" alt="Логотип">
           <span class="visually-hidden">На главную</span>
         </a>
-        <address class="footer-adress-text">
-          Санкт-Петербург, набережная реки Карповки, 5, литера П.
+        <address class="footer-address-text">
+          Санкт-Петербург, набережная<br> реки Карповки, 5, литера П.
         </address>
       </section>
       <section class="footer-nav">
@@ -254,7 +255,7 @@
 
       <section class="footer-phone">
         <h2 class="visually-hidden">Номер телефона</h2>
-        <a class="contacts-phone" href="tel:88128121212">+7 (812)812-12-12</a>
+        <a class="footer-contacts-phone" href="tel:88128121212">+7 (812)812-12-12</a>
         <a class="footer-logo-html-academy" href="#">
           <img class="html-academy-img" src="images/logo-html-academy.svg" width="115" height="33" alt="Логотип Html-academy">
           <span class="visually-hidden">Переход на сайт HTML-academy</span>
