@@ -54,11 +54,13 @@ body {
   color: #000000;
 }
 
-.navigation-search-form input, .search-button {
+.navigation-search-form input,
+.search-button {
   background-color: inherit;
 }
 
-.navigation-search-form input::placeholder, .search-button{
+.navigation-search-form input::placeholder,
+.search-button{
   font-family: "Rubik", sans-serif;
   color: inherit;
   font-size: 16px;
@@ -79,7 +81,11 @@ body {
   text-transform: uppercase;
 }
 
-.slider-slogan, .service-description-title, .info-title, .contacts-title, .newsletter-title, .inner-header-title {
+.slider-slogan,
+.service-description-title,
+.info-title, .contacts-title,
+.newsletter-title,
+.inner-header-title {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 50px;
@@ -146,7 +152,8 @@ body {
   background-color: #F0F0F0;
 }
 
-.newsletter-form input, .newsletter-button {
+.newsletter-form input,
+.newsletter-button {
   background-color: inherit;
 }
 
@@ -178,7 +185,8 @@ body {
   line-height: 19px;
 }
 
-.footer-nav-link, .button-social {
+.footer-nav-link,
+.button-social {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -213,7 +221,8 @@ body {
 
 }
 
-.catalog-title, .sorting-label {
+.catalog-title,
+.sorting-label {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 16px;
@@ -257,7 +266,8 @@ body {
   text-decoration: none;
 }
 
-.pagination-prev, .pagination-next {
+.pagination-prev,
+.pagination-next {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
