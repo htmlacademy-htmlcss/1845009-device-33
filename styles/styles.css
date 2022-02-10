@@ -589,11 +589,12 @@ body {
 
 .footer-nav-list {
   display: flex;
+  flex-wrap: wrap;
   width: 444px;
   justify-content: space-between;
   list-style: none;
   margin: 0;
-  margin-bottom: 62px;
+  margin-bottom: 54px;
   padding: 0;
 }
 
