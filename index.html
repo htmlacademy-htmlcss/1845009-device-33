@@ -9,31 +9,44 @@
   <body>
     <header class="page-header">
       <nav class="navigation navigation-user">
-        <a class="logo">
-          <img class="header-logo" src="images/logo-header.svg" width="146" height="36" alt="Логотип">
+        <a class="logo-header">
+          <img class="header-logo-image" src="images/logo-header.svg" width="146" height="36" alt="Логотип">
           <span class="visually-hidden">На главную</span>
         </a>
-        <form class="navigation-search-form" action="https://echo.htmlacademy.ru/" method="get">
-          <label for="search-field">Поиск</label>
-          <input type="search" name="search-field" id="search-field" placeholder="Текст поиска">
-          <button class="search-button" type="submit">Найти</button>
-        </form>
+        <!--Меню пользователя-->
         <ul class="navigation-user-list">
-          <li class="navigation-user-item">
-            <a class="navigation-user-link navigation-link" href="#">Войти</a>
+          <li class="navigation-user-item navigation-user-item-search">
+            <form class="navigation-search-form" action="https://echo.htmlacademy.ru/" method="get">
+              <label for="search-field">Поиск</label>
+              <input type="search" name="search-field" id="search-field" placeholder="Текст поиска">
+              <button class="search-button" type="submit">Найти</button>
+            </form>
           </li>
           <li class="navigation-user-item">
-            <a class="navigation-user-link navigation-link" href="#">Сравнить</a>
+            <!--Подменю - вход в аккаунт-->
+            <ul class="navigation-user-list navigation-user-list-profile">
+              <li class="navigation-user-item navigation-user-item-log-in">
+                <a class="navigation-user-link navigation-link" href="#">Войти</a>
+              </li>
+            </ul>
           </li>
           <li class="navigation-user-item">
-            <a class="navigation-user-link navigation-link" href="#">Корзина</a>
+            <!--Подменю - покупки-->
+            <ul class="navigation-user-list navigation-user-list-purchases">
+              <li class="navigation-user-item">
+                <a class="navigation-user-link navigation-link" href="#">Сравнить</a>
+              </li>
+              <li class="navigation-user-item">
+                <a class="navigation-user-link navigation-link" href="#">Корзина</a>
+              </li>
+            </ul>
           </li>
         </ul>
       </nav>
 
       <nav class="navigation navigation-site">
         <ul class="navigation-site-list">
-          <li class="navigation-site-item">
+          <li class="navigation-site-item navigation-site-item-catalog">
             <a class="navigation-site-link navigation-link button-show-categories" href="catalog.html">Каталог товаров</a>
           </li>
           <li class="navigation-site-item">
@@ -71,25 +84,26 @@
                   жалит как пчела!</h3>
                 <p class="slider-description">Этот обычный, на первый взгляд, квадрокоптер оснащен<br>
                   мощным лазером, замаскированным под стандартную камеру.</p>
-                <a class="slider-link button" href="#">Подробнее</a>
-                <ol class="slider-pagination">
-                  <li class="slider-pagination-item">
-                    <button class="slider-pagination-button slider-pagination-button-current" type="button">
-                      <span class="visually-hidden">1 устройство</span>
-                    </button>
-                  </li>
-                  <li class="slider-pagination-item">
-                    <button class="slider-pagination-button" type="button">
-                      <span class="visually-hidden">2 устройство</span>
-                    </button>
-                  </li>
-                  <li class="slider-pagination-item">
-                    <button class="slider-pagination-button" type="button">
-                      <span class="visually-hidden">3 устройство</span>
-                    </button>
-                  </li>
-                </ol>
-
+                <div class="slider-button-pagination-wrapper">
+                  <a class="slider-link button" href="#">Подробнее</a>
+                  <ol class="slider-pagination">
+                    <li class="slider-pagination-item">
+                      <button class="slider-pagination-button slider-pagination-button-current" type="button">
+                        <span class="visually-hidden">1 устройство</span>
+                      </button>
+                    </li>
+                    <li class="slider-pagination-item">
+                      <button class="slider-pagination-button" type="button">
+                        <span class="visually-hidden">2 устройство</span>
+                      </button>
+                    </li>
+                    <li class="slider-pagination-item">
+                      <button class="slider-pagination-button" type="button">
+                        <span class="visually-hidden">3 устройство</span>
+                      </button>
+                    </li>
+                  </ol>
+                </div>
                 <table class="slider-features-table">
                   <tr>
                     <th class="table-feature">Дальность полета</th>
@@ -128,6 +142,7 @@
             </ul>
           </section>
         </div>
+
         <section class="services">
           <div class="page-container">
             <h2 class="visually-hidden">Услуги</h2>
@@ -174,9 +189,9 @@
               уголки России транспортными компаниями:</p>
 
             <ul class="delivery-companies-list">
-              <li class="delivery-company-items"><b>Меловые линии</b></li>
-              <li class="delivery-company-items"><b>СДИК</b></li>
-              <li class="delivery-company-items"><b>ТоксБерри</b></li>
+              <li class="delivery-company-item"><b>Меловые линии</b></li>
+              <li class="delivery-company-item"><b>СДИК</b></li>
+              <li class="delivery-company-item"><b>ТоксБерри</b></li>
             </ul>
 
             <a class="button more-info-button" href="#">Подробнее о нас</a>
@@ -224,12 +239,13 @@
           </div>
         </section>
     </main>
+
     <footer class="page-footer">
       <div class="page-footer-container">
         <section class="footer-address">
           <h2 class="visually-hidden">Адрес</h2>
-          <a class="logo footer-logo">
-            <img class="footer-logo-img" src="images/logo-footer.svg" width="145" height="36" alt="Логотип">
+          <a class="footer-logo">
+            <img class="footer-logo-image" src="images/logo-footer.svg" width="145" height="36" alt="Логотип">
             <span class="visually-hidden">На главную</span>
           </a>
           <address class="footer-address-text">
@@ -272,9 +288,9 @@
 
         <section class="footer-phone">
           <h2 class="visually-hidden">Номер телефона</h2>
-          <a class="footer-contacts-phone" href="tel:88128121212">+7 (812)812-12-12</a>
+          <a class="footer-contacts-phone" href="tel:88128121212">Тел.: +7 (812) 812-12-12</a>
           <a class="footer-logo-html-academy" href="#">
-            <img class="html-academy-img" src="images/logo-html-academy.svg" width="115" height="33" alt="Логотип Html-academy">
+            <img class="html-academy-image" src="images/logo-html-academy.svg" width="115" height="33" alt="Логотип Html-academy">
             <span class="visually-hidden">Переход на сайт HTML-academy</span>
           </a>
         </section>
