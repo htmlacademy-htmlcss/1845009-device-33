@@ -59,7 +59,7 @@ body {
 }
 
 .button {
-  font-family: Raleway;
+  font-family: "Raleway";
   font-weight: 800;
   font-size: 18px;
   line-height: 21px;
@@ -210,11 +210,14 @@ body {
   margin-bottom: 40px;
 }
 
+.bestsellers {
+  margin-top: -40px;
+  margin-bottom: 70px;
+}
+
 .bestsellers-slider-container {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 70px;
-  margin-top: -40px;
   background-image: linear-gradient(to bottom, #FFE17F 150px, white 150px);
 }
 
@@ -255,13 +258,26 @@ body {
   margin-right: 20px;
 }
 
-.table-feature {
+.slider-features-list {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  justify-content: start;
+  column-gap: 20px;
+  row-gap: 12px;
+  padding: 0;
+  margin: 0;
+}
+
+.slider-feature {
   font-size: 16px;
 }
 
-.table-value {
+.slider-value {
+  grid-row: 1 / 2;
   font-size: 36px;
   color: #000000;
+  margin: 0;
+  padding: 0;
 }
 
 .device-categories {
@@ -277,31 +293,30 @@ body {
   padding: 0;
 }
 
-.device-categories-link {
+.device-categories-item {
   display: flex;
-  justify-content: flex-start;
-  box-sizing: border-box;
-  padding-top: 193px;
-  position: relative;
-  width: 160px;
   height: 253px;
+}
+
+.device-categories-link {
+  display: block;
+  width: 160px;
   text-align: left;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   line-height: 24px;
   letter-spacing: -0.02em;
-  text-align: center;
+  text-align: left;
   color: #000000;
   text-decoration: none;
 }
 
 .device-categories-link::before {
+  display: block;
   content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 160px;
   height: 160px;
+  margin-bottom: 32px;
   background-color: #FFE17F;
   background-position: center;
   background-repeat: no-repeat;
@@ -671,6 +686,7 @@ body {
 .inner-header-title {
   margin: 0;
   margin-bottom: 16px;
+
 }
 
 
@@ -756,6 +772,10 @@ body {
 }
 
 .catalog-list {
+  display: grid;
+  grid-template-columns: 360px 360px;
+  column-gap: 40px;
+  row-gap: 44px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -771,10 +791,6 @@ body {
 .catalog-card-image {
   display: block;
   margin-bottom: 32px;
-}
-
-.catalog-card {
-  width: 360px;
 }
 
 .catalog-card-title {
