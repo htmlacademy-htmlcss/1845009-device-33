@@ -269,6 +269,7 @@ body {
 }
 
 .search-button-wrapper {
+  display: block;
   margin: 0;
   padding: 10px 56px;
   font-size: 16px;
