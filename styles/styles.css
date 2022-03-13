@@ -35,6 +35,7 @@ html {
 }
 
 body {
+  min-height: 1160px;
   display: flex;
   flex-direction: column;
   min-height: 100%;
@@ -439,7 +440,7 @@ body {
 
 .button-show-categories:active.button-show-categories::after {
   opacity: 1;
-  background-image: url("../images/minus.svg")
+  background-image: url("../images/minus.svg");
 }
 
 
@@ -448,10 +449,13 @@ body {
   outline: none;
 }
 
-.button-show-categories-press + .catalog-popover {
-  display: block;
+.navigation-site-item-catalog:hover .button-show-categories::after {
+  background-image: url("../images/minus.svg");
 }
 
+.navigation-site-item-catalog:hover .catalog-popover {
+  display: block;
+}
 
 .navigation-site-item-catalog {
   position: relative;
@@ -465,7 +469,7 @@ body {
   left: -60px;
   padding-left: 60px;
   padding-top: 32px;
-  padding-bottom: 32px;
+  padding-bottom: 55px;
   background-color: #FFE17F;
 }
 
@@ -475,20 +479,18 @@ body {
 
 .catalog-popover-list {
   display: flex;
-  flex-direction: column;
   list-style: none;
   padding: 0;
   margin: 0;
-  margin-right: 40px;
   column-count: 3;
-}
-
-.catalog-popover-list:last-child {
-  margin-right: 0;
+  margin-right: auto;
+  column-gap: 5px;
 }
 
 .catalog-popover-item {
   margin-bottom: 5px;
+  margin-right: 60px;
+  min-width: 193px;
 }
 
 .catalog-popover-link {
@@ -2359,7 +2361,6 @@ body {
 }
 
 .popover {
-  display: none;
   position: absolute;
   top: 35px;
   left: -140%;
@@ -2372,6 +2373,11 @@ body {
   color: #ffffff;
   background-color: #000000;
   min-height: 190px;
+  display: none;
+}
+
+.popover-opened {
+  display: block;
 }
 
 .popover-content {
